@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int min=10;
+    while(a!=0){
+        int r=a%10;
+        if(r<min){
+            min=r;
+        }
+        a=a/10;
+        
+    }
+printf("%d",min);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
